@@ -9,3 +9,9 @@ cloudResources:
     ../postman/mocks/expense-tracker-mock/config.yaml: 01a0f1d0-9187-77d8-b6a0-6bf70368e5e0
   globals:
     ../postman/globals/workspace.globals.yaml: d899d323-1e35-4df8-8d28-f856b1b5fbd9
+localResources:
+  specs:
+    - ../postman/specs/Expense Tracker Spec/Expense Tracker Spec.yaml
+resourceNameMappings:
+  specs:
+    - ../postman/specs/Expense Tracker Spec/Expense Tracker Spec.yaml: Expense Tracker Spec
