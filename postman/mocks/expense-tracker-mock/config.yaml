@@ -1,0 +1,16 @@
+id: 01a0f1d0-9187-77d8-b6a0-6bf70368e5e0
+version: 1
+name: Expense Tracker Mock
+slug: expense-tracker-mock
+enableSession: true
+protocol: http
+port: 9000
+autoRestartOnChange: true
+logging:
+  level: verbose
+  showBody: true
+scenarios:
+  - name: default
+    path: ./default.js
+    default: true
+    id: 01a0f1d5-dc20-779d-aec6-8220331c7ba4

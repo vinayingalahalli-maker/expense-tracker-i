@@ -1,0 +1,18 @@
+$kind: http-example
+name: '409 Conflict - Expense in Claim'
+request:
+  url: '{{base_url}}/expenses/exp_01'
+  method: DELETE
+response:
+  statusCode: 409
+  statusText: Conflict
+  headers:
+    - key: Content-Type
+      value: application/json
+  body:
+    type: json
+    content: |-
+      {
+        "error": "expense_frozen",
+        "message": "Expense exp_01 is part of a submitted claim and cannot be deleted"
+      }

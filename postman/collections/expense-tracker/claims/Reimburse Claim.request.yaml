@@ -1,0 +1,9 @@
+$kind: http-request
+name: Reimburse Claim
+method: POST
+url: '{{base_url}}/claims/:claim_id/reimburse'
+order: 7000
+pathVariables:
+  - key: claim_id
+    value: clm_01
+examples: './.resources/Reimburse Claim.resources/examples/'

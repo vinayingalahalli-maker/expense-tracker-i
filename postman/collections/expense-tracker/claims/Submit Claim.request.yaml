@@ -1,0 +1,9 @@
+$kind: http-request
+name: Submit Claim
+method: POST
+url: '{{base_url}}/claims/:claim_id/submit'
+order: 4000
+pathVariables:
+  - key: claim_id
+    value: clm_01
+examples: './.resources/Submit Claim.resources/examples/'

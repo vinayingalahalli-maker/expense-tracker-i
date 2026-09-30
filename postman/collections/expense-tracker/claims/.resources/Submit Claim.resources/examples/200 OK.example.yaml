@@ -1,0 +1,24 @@
+$kind: http-example
+name: 200 OK
+request:
+  url: '{{base_url}}/claims/clm_01/submit'
+  method: POST
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    - key: Content-Type
+      value: application/json
+  body:
+    type: json
+    content: |-
+      {
+        "id": "clm_01",
+        "title": "September Business Trip",
+        "status": "submitted",
+        "expense_ids": ["exp_01", "exp_02"],
+        "total_amount": 60.50,
+        "currency": "USD",
+        "created_by": "user_42",
+        "submitted_at": "2026-09-29T09:00:00Z"
+      }

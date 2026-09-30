@@ -1,0 +1,18 @@
+$kind: http-example
+name: 404 Not Found
+request:
+  url: '{{base_url}}/categories/cat_999'
+  method: GET
+response:
+  statusCode: 404
+  statusText: Not Found
+  headers:
+    - key: Content-Type
+      value: application/json
+  body:
+    type: json
+    content: |-
+      {
+        "error": "not_found",
+        "message": "Category cat_999 does not exist"
+      }

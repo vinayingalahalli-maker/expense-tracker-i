@@ -1,0 +1,324 @@
+{
+  "entityId": "23F1244Fc38d9FE4E4C8eABC",
+  "entityType": "collections",
+  "buildId": 22200,
+  "createdAt": "2026-09-30T10:25:56.702Z",
+  "downloads": [
+    {
+      "language": "typescript",
+      "status": "success",
+      "createdAt": "2026-09-30T10:25:56.712Z",
+      "link": "https://us-prod-sdk-gen-api-code-gen-uploads.s3.us-east-1.amazonaws.com/d916cec1-7bc3-48af-a93b-fc04b67ef7a2/expense-tracker-api-sdk-typescript-1.0.0.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LJBU7PNNPUACV%2F20260930%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260930T102608Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQDn4b%2Fj%2BYm77XbYD%2BsIc9CH9clrLr%2FN0DgKCptJvZIH7QIgRRU6fhHSKxzVnf%2Bek8CVyDNmmJsaWS7jSAEUioufF4kqkwUIYxAAGgw2Mzc0MjM2NTIxNTgiDJ0wmIpu6bd1JtYWjirwBDkgwPcuwc9t%2FZr4Ilq5LDY3mCDF%2BJqoe6mGG4dObbr2f%2BeWJ2xOUCQx8dpQ4zTaXlrhhEBiiaQfSH2RK9kD4NZjszs%2FqnDmx%2B5LQNqDMYiExl5%2F9f8PuJNvOGmXGbgDR8mVxrb6l018uZi0mYQc6nA%2FRfoZEgz78DCMcH7YJI5u4VHxxHgEBti3M2LU08NNwg9tT2ihDKZ92UK3BUUg4FQkWzgb0XckGgnK1vRvF2CUP6Vt4DvzJgH%2BsDUHJPcLesraPgIQy3%2F8T5nbnTh9newXJ4v2oNjlTQBvp%2FMw6ixlyf9kghspYxa%2Br0TETVEcp%2Fw6C05tbQ3umC1NPPFSAaxlawiWT9IYWc%2BO%2Bnw9aCnZwXraEhKgNnMl28FJegCwzRAXV3zRbPznSqdqxuEzPocROFm%2BW2Y1vaVqnmklBhtdr%2FhYMr8BTGau5EYA%2FOAUkTLFp%2BLejcV56rGG3cGx6q8kvDbjFg9%2FTz99FSWgLwkAUJaeH3Cmp7llCjMbFEz5Q6QV37wIKkGEFvaO7J08IX8q0sUYJ%2Fy%2BNuoQNmlsvqgJiSH4d1kascWs0W%2BjCuACKcITSdYCXVyHj23kDLaOYl0Nor49gJja3cr6r6QkH%2F0q%2BjT9gCpvgZruh027vDgh0KhWEgOvieeHa%2FyaC8u2hMBFeoBFPTPQHLO9QfOzeEOc0tkStJqX%2BD29hjKcy%2Fc9%2BSusja785ycLcxl52lFlCD2UIACc%2FiMLkWv8K9ox7Mzivf%2FVtUDrA8QMtP0pwwEtp2csOndi%2BIwxr4I9I3CRQ8hm3g9%2FXlUfreR6%2FkJOMBvhqwzVSOrWu2Bqbmd6j0GYmTCjtfPVBjqZAU7L2klaK7BC9ip82CUjb2XeHtMURiDtVUWyl2g%2FJ5gLn64NNxuLRsFQZnLML74Bw5cHEbwj3mFYDlQf%2BL0o8qOJbBjVppO9ZJZE3gsG0uWFIeZXQUocfgb7gk0hNBY01xJnL3J0lwC9vIUGeLMjQBwjNceMnv1nRMxmWdW1z414FJRQ%2Bt8ZHjokHmlCx5eaVnLgFiaWl3KZ%2Bg%3D%3D&X-Amz-Signature=abd4d267ab60f9a3e848283969bb39557add08d67acb3ca724072b03f71c0408&X-Amz-SignedHeaders=host&x-id=GetObject",
+      "contentHash": "a8de52098d4846ae1b936f33c1a74721b1734890860d4b38cf2efb6e3f2466bf",
+      "logs": [
+        {
+          "message": "Request \"List Categories\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Categories/List Categories",
+          "createdAt": "2026-09-30T10:26:02.478Z"
+        },
+        {
+          "message": "Request \"Create Category\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Categories/Create Category",
+          "createdAt": "2026-09-30T10:26:02.478Z"
+        },
+        {
+          "message": "Request \"Get Category\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Categories/Get Category",
+          "createdAt": "2026-09-30T10:26:02.478Z"
+        },
+        {
+          "message": "Request \"Update Category\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Categories/Update Category",
+          "createdAt": "2026-09-30T10:26:02.478Z"
+        },
+        {
+          "message": "Request \"List Expenses\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Expenses/List Expenses",
+          "createdAt": "2026-09-30T10:26:02.478Z"
+        },
+        {
+          "message": "Request \"Create Expense\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Expenses/Create Expense",
+          "createdAt": "2026-09-30T10:26:02.478Z"
+        },
+        {
+          "message": "Request \"Get Expense\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Expenses/Get Expense",
+          "createdAt": "2026-09-30T10:26:02.478Z"
+        },
+        {
+          "message": "Request \"Update Expense\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Expenses/Update Expense",
+          "createdAt": "2026-09-30T10:26:02.478Z"
+        },
+        {
+          "message": "Request \"Delete Expense\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Expenses/Delete Expense",
+          "createdAt": "2026-09-30T10:26:02.478Z"
+        },
+        {
+          "message": "Request \"List Claims\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Claims/List Claims",
+          "createdAt": "2026-09-30T10:26:02.478Z"
+        },
+        {
+          "message": "Request \"Create Claim\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Claims/Create Claim",
+          "createdAt": "2026-09-30T10:26:02.478Z"
+        },
+        {
+          "message": "Request \"Get Claim\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Claims/Get Claim",
+          "createdAt": "2026-09-30T10:26:02.478Z"
+        },
+        {
+          "message": "Request \"Submit Claim\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Claims/Submit Claim",
+          "createdAt": "2026-09-30T10:26:02.478Z"
+        },
+        {
+          "message": "Request \"Approve Claim\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Claims/Approve Claim",
+          "createdAt": "2026-09-30T10:26:02.478Z"
+        },
+        {
+          "message": "Request \"Reject Claim\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Claims/Reject Claim",
+          "createdAt": "2026-09-30T10:26:02.478Z"
+        },
+        {
+          "message": "Request \"Reimburse Claim\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Claims/Reimburse Claim",
+          "createdAt": "2026-09-30T10:26:02.478Z"
+        }
+      ]
+    },
+    {
+      "language": "python",
+      "status": "success",
+      "createdAt": "2026-09-30T10:25:56.713Z",
+      "link": "https://us-prod-sdk-gen-api-code-gen-uploads.s3.us-east-1.amazonaws.com/7e6d796f-786a-418e-a5db-2139cd88e87b/expense-tracker-api-sdk-python-1.0.0.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LJBU7PNNPUACV%2F20260930%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260930T102608Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQDn4b%2Fj%2BYm77XbYD%2BsIc9CH9clrLr%2FN0DgKCptJvZIH7QIgRRU6fhHSKxzVnf%2Bek8CVyDNmmJsaWS7jSAEUioufF4kqkwUIYxAAGgw2Mzc0MjM2NTIxNTgiDJ0wmIpu6bd1JtYWjirwBDkgwPcuwc9t%2FZr4Ilq5LDY3mCDF%2BJqoe6mGG4dObbr2f%2BeWJ2xOUCQx8dpQ4zTaXlrhhEBiiaQfSH2RK9kD4NZjszs%2FqnDmx%2B5LQNqDMYiExl5%2F9f8PuJNvOGmXGbgDR8mVxrb6l018uZi0mYQc6nA%2FRfoZEgz78DCMcH7YJI5u4VHxxHgEBti3M2LU08NNwg9tT2ihDKZ92UK3BUUg4FQkWzgb0XckGgnK1vRvF2CUP6Vt4DvzJgH%2BsDUHJPcLesraPgIQy3%2F8T5nbnTh9newXJ4v2oNjlTQBvp%2FMw6ixlyf9kghspYxa%2Br0TETVEcp%2Fw6C05tbQ3umC1NPPFSAaxlawiWT9IYWc%2BO%2Bnw9aCnZwXraEhKgNnMl28FJegCwzRAXV3zRbPznSqdqxuEzPocROFm%2BW2Y1vaVqnmklBhtdr%2FhYMr8BTGau5EYA%2FOAUkTLFp%2BLejcV56rGG3cGx6q8kvDbjFg9%2FTz99FSWgLwkAUJaeH3Cmp7llCjMbFEz5Q6QV37wIKkGEFvaO7J08IX8q0sUYJ%2Fy%2BNuoQNmlsvqgJiSH4d1kascWs0W%2BjCuACKcITSdYCXVyHj23kDLaOYl0Nor49gJja3cr6r6QkH%2F0q%2BjT9gCpvgZruh027vDgh0KhWEgOvieeHa%2FyaC8u2hMBFeoBFPTPQHLO9QfOzeEOc0tkStJqX%2BD29hjKcy%2Fc9%2BSusja785ycLcxl52lFlCD2UIACc%2FiMLkWv8K9ox7Mzivf%2FVtUDrA8QMtP0pwwEtp2csOndi%2BIwxr4I9I3CRQ8hm3g9%2FXlUfreR6%2FkJOMBvhqwzVSOrWu2Bqbmd6j0GYmTCjtfPVBjqZAU7L2klaK7BC9ip82CUjb2XeHtMURiDtVUWyl2g%2FJ5gLn64NNxuLRsFQZnLML74Bw5cHEbwj3mFYDlQf%2BL0o8qOJbBjVppO9ZJZE3gsG0uWFIeZXQUocfgb7gk0hNBY01xJnL3J0lwC9vIUGeLMjQBwjNceMnv1nRMxmWdW1z414FJRQ%2Bt8ZHjokHmlCx5eaVnLgFiaWl3KZ%2Bg%3D%3D&X-Amz-Signature=c090b63b26a6a5fa1728662c975e33abda4283f328290144664cbf4cc54cb80b&X-Amz-SignedHeaders=host&x-id=GetObject",
+      "contentHash": "8b656e086fb387f9de2e7c1518420087ce71eb60f47e24c69837c64d1c2cf377",
+      "logs": [
+        {
+          "message": "Request \"List Categories\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Categories/List Categories",
+          "createdAt": "2026-09-30T10:26:01.417Z"
+        },
+        {
+          "message": "Request \"Create Category\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Categories/Create Category",
+          "createdAt": "2026-09-30T10:26:01.417Z"
+        },
+        {
+          "message": "Request \"Get Category\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Categories/Get Category",
+          "createdAt": "2026-09-30T10:26:01.417Z"
+        },
+        {
+          "message": "Request \"Update Category\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Categories/Update Category",
+          "createdAt": "2026-09-30T10:26:01.417Z"
+        },
+        {
+          "message": "Request \"List Expenses\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Expenses/List Expenses",
+          "createdAt": "2026-09-30T10:26:01.417Z"
+        },
+        {
+          "message": "Request \"Create Expense\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Expenses/Create Expense",
+          "createdAt": "2026-09-30T10:26:01.417Z"
+        },
+        {
+          "message": "Request \"Get Expense\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Expenses/Get Expense",
+          "createdAt": "2026-09-30T10:26:01.417Z"
+        },
+        {
+          "message": "Request \"Update Expense\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Expenses/Update Expense",
+          "createdAt": "2026-09-30T10:26:01.417Z"
+        },
+        {
+          "message": "Request \"Delete Expense\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Expenses/Delete Expense",
+          "createdAt": "2026-09-30T10:26:01.417Z"
+        },
+        {
+          "message": "Request \"List Claims\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Claims/List Claims",
+          "createdAt": "2026-09-30T10:26:01.417Z"
+        },
+        {
+          "message": "Request \"Create Claim\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Claims/Create Claim",
+          "createdAt": "2026-09-30T10:26:01.417Z"
+        },
+        {
+          "message": "Request \"Get Claim\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Claims/Get Claim",
+          "createdAt": "2026-09-30T10:26:01.417Z"
+        },
+        {
+          "message": "Request \"Submit Claim\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Claims/Submit Claim",
+          "createdAt": "2026-09-30T10:26:01.417Z"
+        },
+        {
+          "message": "Request \"Approve Claim\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Claims/Approve Claim",
+          "createdAt": "2026-09-30T10:26:01.417Z"
+        },
+        {
+          "message": "Request \"Reject Claim\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Claims/Reject Claim",
+          "createdAt": "2026-09-30T10:26:01.417Z"
+        },
+        {
+          "message": "Request \"Reimburse Claim\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Claims/Reimburse Claim",
+          "createdAt": "2026-09-30T10:26:01.417Z"
+        }
+      ]
+    },
+    {
+      "language": "java",
+      "status": "success",
+      "createdAt": "2026-09-30T10:25:56.713Z",
+      "link": "https://us-prod-sdk-gen-api-code-gen-uploads.s3.us-east-1.amazonaws.com/a0d22166-e1b6-46ac-97e4-7e3f42b77ddb/expense-tracker-api-sdk-java-1.0.0.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LJBU7PNNPUACV%2F20260930%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260930T102608Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQDn4b%2Fj%2BYm77XbYD%2BsIc9CH9clrLr%2FN0DgKCptJvZIH7QIgRRU6fhHSKxzVnf%2Bek8CVyDNmmJsaWS7jSAEUioufF4kqkwUIYxAAGgw2Mzc0MjM2NTIxNTgiDJ0wmIpu6bd1JtYWjirwBDkgwPcuwc9t%2FZr4Ilq5LDY3mCDF%2BJqoe6mGG4dObbr2f%2BeWJ2xOUCQx8dpQ4zTaXlrhhEBiiaQfSH2RK9kD4NZjszs%2FqnDmx%2B5LQNqDMYiExl5%2F9f8PuJNvOGmXGbgDR8mVxrb6l018uZi0mYQc6nA%2FRfoZEgz78DCMcH7YJI5u4VHxxHgEBti3M2LU08NNwg9tT2ihDKZ92UK3BUUg4FQkWzgb0XckGgnK1vRvF2CUP6Vt4DvzJgH%2BsDUHJPcLesraPgIQy3%2F8T5nbnTh9newXJ4v2oNjlTQBvp%2FMw6ixlyf9kghspYxa%2Br0TETVEcp%2Fw6C05tbQ3umC1NPPFSAaxlawiWT9IYWc%2BO%2Bnw9aCnZwXraEhKgNnMl28FJegCwzRAXV3zRbPznSqdqxuEzPocROFm%2BW2Y1vaVqnmklBhtdr%2FhYMr8BTGau5EYA%2FOAUkTLFp%2BLejcV56rGG3cGx6q8kvDbjFg9%2FTz99FSWgLwkAUJaeH3Cmp7llCjMbFEz5Q6QV37wIKkGEFvaO7J08IX8q0sUYJ%2Fy%2BNuoQNmlsvqgJiSH4d1kascWs0W%2BjCuACKcITSdYCXVyHj23kDLaOYl0Nor49gJja3cr6r6QkH%2F0q%2BjT9gCpvgZruh027vDgh0KhWEgOvieeHa%2FyaC8u2hMBFeoBFPTPQHLO9QfOzeEOc0tkStJqX%2BD29hjKcy%2Fc9%2BSusja785ycLcxl52lFlCD2UIACc%2FiMLkWv8K9ox7Mzivf%2FVtUDrA8QMtP0pwwEtp2csOndi%2BIwxr4I9I3CRQ8hm3g9%2FXlUfreR6%2FkJOMBvhqwzVSOrWu2Bqbmd6j0GYmTCjtfPVBjqZAU7L2klaK7BC9ip82CUjb2XeHtMURiDtVUWyl2g%2FJ5gLn64NNxuLRsFQZnLML74Bw5cHEbwj3mFYDlQf%2BL0o8qOJbBjVppO9ZJZE3gsG0uWFIeZXQUocfgb7gk0hNBY01xJnL3J0lwC9vIUGeLMjQBwjNceMnv1nRMxmWdW1z414FJRQ%2Bt8ZHjokHmlCx5eaVnLgFiaWl3KZ%2Bg%3D%3D&X-Amz-Signature=290951b59e33eddfa5ccbec30d635f887731dc9794f018607c7ebb3eb165d520&X-Amz-SignedHeaders=host&x-id=GetObject",
+      "contentHash": "11ddaf0c82a6de67e03bc2b85317daaafa8fc0865358cba15bd89d04ffddfde4",
+      "logs": [
+        {
+          "message": "Request \"List Categories\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Categories/List Categories",
+          "createdAt": "2026-09-30T10:26:04.077Z"
+        },
+        {
+          "message": "Request \"Create Category\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Categories/Create Category",
+          "createdAt": "2026-09-30T10:26:04.077Z"
+        },
+        {
+          "message": "Request \"Get Category\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Categories/Get Category",
+          "createdAt": "2026-09-30T10:26:04.077Z"
+        },
+        {
+          "message": "Request \"Update Category\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Categories/Update Category",
+          "createdAt": "2026-09-30T10:26:04.077Z"
+        },
+        {
+          "message": "Request \"List Expenses\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Expenses/List Expenses",
+          "createdAt": "2026-09-30T10:26:04.077Z"
+        },
+        {
+          "message": "Request \"Create Expense\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Expenses/Create Expense",
+          "createdAt": "2026-09-30T10:26:04.077Z"
+        },
+        {
+          "message": "Request \"Get Expense\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Expenses/Get Expense",
+          "createdAt": "2026-09-30T10:26:04.077Z"
+        },
+        {
+          "message": "Request \"Update Expense\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Expenses/Update Expense",
+          "createdAt": "2026-09-30T10:26:04.077Z"
+        },
+        {
+          "message": "Request \"Delete Expense\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Expenses/Delete Expense",
+          "createdAt": "2026-09-30T10:26:04.077Z"
+        },
+        {
+          "message": "Request \"List Claims\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Claims/List Claims",
+          "createdAt": "2026-09-30T10:26:04.077Z"
+        },
+        {
+          "message": "Request \"Create Claim\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Claims/Create Claim",
+          "createdAt": "2026-09-30T10:26:04.077Z"
+        },
+        {
+          "message": "Request \"Get Claim\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Claims/Get Claim",
+          "createdAt": "2026-09-30T10:26:04.077Z"
+        },
+        {
+          "message": "Request \"Submit Claim\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Claims/Submit Claim",
+          "createdAt": "2026-09-30T10:26:04.077Z"
+        },
+        {
+          "message": "Request \"Approve Claim\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Claims/Approve Claim",
+          "createdAt": "2026-09-30T10:26:04.077Z"
+        },
+        {
+          "message": "Request \"Reject Claim\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Claims/Reject Claim",
+          "createdAt": "2026-09-30T10:26:04.077Z"
+        },
+        {
+          "message": "Request \"Reimburse Claim\" is missing a description. Consider adding one for better SDK documentation.",
+          "severity": "INFO",
+          "path": "Claims/Reimburse Claim",
+          "createdAt": "2026-09-30T10:26:04.077Z"
+        }
+      ]
+    }
+  ],
+  "sdkName": "expense-tracker-api-sdk"
+}

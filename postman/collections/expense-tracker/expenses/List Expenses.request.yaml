@@ -1,0 +1,11 @@
+$kind: http-request
+name: List Expenses
+method: GET
+url: '{{base_url}}/expenses'
+order: 1000
+queryParams:
+  - key: status
+    value: unclaimed
+    description: 'Filter by status: unclaimed | claimed'
+    disabled: true
+examples: './.resources/List Expenses.resources/examples/'

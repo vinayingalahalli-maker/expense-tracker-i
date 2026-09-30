@@ -1,0 +1,9 @@
+$kind: http-request
+name: Get Category
+method: GET
+url: '{{base_url}}/categories/:category_id'
+order: 3000
+pathVariables:
+  - key: category_id
+    value: cat_01
+examples: './.resources/Get Category.resources/examples/'

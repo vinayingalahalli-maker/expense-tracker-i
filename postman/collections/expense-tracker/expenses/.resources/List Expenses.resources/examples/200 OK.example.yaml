@@ -1,0 +1,38 @@
+$kind: http-example
+name: 200 OK
+request:
+  url: '{{base_url}}/expenses'
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    - key: Content-Type
+      value: application/json
+  body:
+    type: json
+    content: |-
+      [
+        {
+          "id": "exp_01",
+          "amount": 42.50,
+          "currency": "USD",
+          "date": "2026-09-28",
+          "description": "Taxi to client site",
+          "category_id": "cat_01",
+          "status": "unclaimed",
+          "receipt_url": null,
+          "created_by": "user_42"
+        },
+        {
+          "id": "exp_02",
+          "amount": 18.00,
+          "currency": "USD",
+          "date": "2026-09-27",
+          "description": "Team lunch",
+          "category_id": "cat_02",
+          "status": "unclaimed",
+          "receipt_url": null,
+          "created_by": "user_42"
+        }
+      ]

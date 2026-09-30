@@ -1,0 +1,9 @@
+$kind: http-request
+name: Delete Expense
+method: DELETE
+url: '{{base_url}}/expenses/:expense_id'
+order: 5000
+pathVariables:
+  - key: expense_id
+    value: exp_01
+examples: './.resources/Delete Expense.resources/examples/'

@@ -1,0 +1,11 @@
+$kind: http-request
+name: List Claims
+method: GET
+url: '{{base_url}}/claims'
+order: 1000
+queryParams:
+  - key: status
+    value: draft
+    description: 'Filter by status: draft | submitted | approved | rejected | reimbursed'
+    disabled: true
+examples: './.resources/List Claims.resources/examples/'
