@@ -1,0 +1,4 @@
+$kind: collection
+name: Categories
+description: 'Finance-managed expense categories. Each category has a receipt threshold — expenses above it require a receipt.'
+order: 1000

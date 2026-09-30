@@ -1,0 +1,22 @@
+$kind: http-request
+name: Update Expense
+method: PUT
+url: '{{base_url}}/expenses/:expense_id'
+order: 4000
+pathVariables:
+  - key: expense_id
+    value: exp_01
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "amount": 55.00,
+      "currency": "USD",
+      "date": "2026-09-28",
+      "description": "Taxi to client site (updated fare)",
+      "category_id": "cat_01"
+    }
+examples: './.resources/Update Expense.resources/examples/'

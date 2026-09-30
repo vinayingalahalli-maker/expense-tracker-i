@@ -1,0 +1,21 @@
+$kind: http-example
+name: 200 OK
+request:
+  url: '{{base_url}}/categories/cat_01'
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    - key: Content-Type
+      value: application/json
+  body:
+    type: json
+    content: |-
+      {
+        "id": "cat_01",
+        "name": "Travel",
+        "description": "Flights, hotels, and ground transport",
+        "receipt_threshold": 50.00,
+        "currency": "USD"
+      }

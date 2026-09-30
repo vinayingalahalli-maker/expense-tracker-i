@@ -1,0 +1,30 @@
+$kind: http-example
+name: 201 Created
+request:
+  url: '{{base_url}}/categories'
+  method: POST
+  body:
+    type: json
+    content: |-
+      {
+        "name": "Travel",
+        "description": "Flights, hotels, and ground transport",
+        "receipt_threshold": 50.00,
+        "currency": "USD"
+      }
+response:
+  statusCode: 201
+  statusText: Created
+  headers:
+    - key: Content-Type
+      value: application/json
+  body:
+    type: json
+    content: |-
+      {
+        "id": "cat_01",
+        "name": "Travel",
+        "description": "Flights, hotels, and ground transport",
+        "receipt_threshold": 50.00,
+        "currency": "USD"
+      }

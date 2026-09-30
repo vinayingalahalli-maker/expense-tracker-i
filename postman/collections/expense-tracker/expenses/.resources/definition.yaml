@@ -1,0 +1,4 @@
+$kind: collection
+name: Expenses
+description: 'Employees record what they spent, in the currency they spent it, against exactly one category. Optional receipt images can be attached. Amounts must be positive and dates cannot be in the future.'
+order: 2000

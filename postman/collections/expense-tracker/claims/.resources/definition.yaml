@@ -1,0 +1,7 @@
+$kind: collection
+name: Claims
+description: |-
+  Employees group unclaimed expenses into a claim and submit it.
+  State machine: draft → submitted → approved | rejected → reimbursed.
+  An approver cannot approve their own claim. A reimbursed claim is final.
+order: 3000

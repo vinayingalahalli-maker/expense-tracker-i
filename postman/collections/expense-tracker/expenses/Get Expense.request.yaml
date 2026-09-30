@@ -1,0 +1,9 @@
+$kind: http-request
+name: Get Expense
+method: GET
+url: '{{base_url}}/expenses/:expense_id'
+order: 3000
+pathVariables:
+  - key: expense_id
+    value: exp_01
+examples: './.resources/Get Expense.resources/examples/'

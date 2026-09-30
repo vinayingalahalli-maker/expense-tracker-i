@@ -1,0 +1,35 @@
+$kind: http-example
+name: 201 Created
+request:
+  url: '{{base_url}}/expenses'
+  method: POST
+  body:
+    type: json
+    content: |-
+      {
+        "amount": 42.50,
+        "currency": "USD",
+        "date": "2026-09-28",
+        "description": "Taxi to client site",
+        "category_id": "cat_01"
+      }
+response:
+  statusCode: 201
+  statusText: Created
+  headers:
+    - key: Content-Type
+      value: application/json
+  body:
+    type: json
+    content: |-
+      {
+        "id": "exp_01",
+        "amount": 42.50,
+        "currency": "USD",
+        "date": "2026-09-28",
+        "description": "Taxi to client site",
+        "category_id": "cat_01",
+        "status": "unclaimed",
+        "receipt_url": null,
+        "created_by": "user_42"
+      }

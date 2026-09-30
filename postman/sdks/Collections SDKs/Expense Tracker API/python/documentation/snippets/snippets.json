@@ -1,0 +1,85 @@
+{
+  "endpoints": {
+    "/categories": {
+      "get": "from expense_tracker_api_sdk import ExpenseTrackerApiSdk, Environment\n\nsdk = ExpenseTrackerApiSdk(\n    access_token=\"YOUR_ACCESS_TOKEN\",\n    base_url=Environment.DEFAULT.value,\n    timeout=10\n)\n\nresult = sdk.expense_tracker_api_sdk.list_categories()\n\nprint(result)\n",
+      "post": "from expense_tracker_api_sdk import ExpenseTrackerApiSdk, Environment\nfrom expense_tracker_api_sdk.models import CreateCategoryRequest\n\nsdk = ExpenseTrackerApiSdk(\n    access_token=\"YOUR_ACCESS_TOKEN\",\n    base_url=Environment.DEFAULT.value,\n    timeout=10\n)\n\nrequest_body = CreateCategoryRequest(\n    name=\"Travel\",\n    description=\"Flights, hotels, and ground transport\",\n    receipt_threshold=50,\n    currency=\"USD\"\n)\n\nresult = sdk.expense_tracker_api_sdk.create_category(request_body=request_body)\n\nprint(result)\n"
+    },
+    "/categories/{category_id}": {
+      "get": "from expense_tracker_api_sdk import ExpenseTrackerApiSdk, Environment\n\nsdk = ExpenseTrackerApiSdk(\n    access_token=\"YOUR_ACCESS_TOKEN\",\n    base_url=Environment.DEFAULT.value,\n    timeout=10\n)\n\nresult = sdk.expense_tracker_api_sdk.get_category(category_id=\"cat_01\")\n\nprint(result)\n",
+      "put": "from expense_tracker_api_sdk import ExpenseTrackerApiSdk, Environment\nfrom expense_tracker_api_sdk.models import CreateCategoryRequest\n\nsdk = ExpenseTrackerApiSdk(\n    access_token=\"YOUR_ACCESS_TOKEN\",\n    base_url=Environment.DEFAULT.value,\n    timeout=10\n)\n\nrequest_body = CreateCategoryRequest(\n    name=\"Travel\",\n    description=\"Flights, hotels, and ground transport\",\n    receipt_threshold=50,\n    currency=\"USD\"\n)\n\nresult = sdk.expense_tracker_api_sdk.update_category(\n    request_body=request_body,\n    category_id=\"cat_01\"\n)\n\nprint(result)\n"
+    },
+    "/expenses": {
+      "get": "from expense_tracker_api_sdk import ExpenseTrackerApiSdk, Environment\n\nsdk = ExpenseTrackerApiSdk(\n    access_token=\"YOUR_ACCESS_TOKEN\",\n    base_url=Environment.DEFAULT.value,\n    timeout=10\n)\n\nresult = sdk.expense_tracker_api_sdk.list_expenses(status=\"unclaimed\")\n\nprint(result)\n",
+      "post": "from expense_tracker_api_sdk import ExpenseTrackerApiSdk, Environment\nfrom expense_tracker_api_sdk.models import CreateExpenseRequest\n\nsdk = ExpenseTrackerApiSdk(\n    access_token=\"YOUR_ACCESS_TOKEN\",\n    base_url=Environment.DEFAULT.value,\n    timeout=10\n)\n\nrequest_body = CreateExpenseRequest(\n    amount=42.5,\n    currency=\"USD\",\n    date_=\"2026-09-28\",\n    description=\"Taxi to client site\",\n    category_id=\"cat_01\"\n)\n\nresult = sdk.expense_tracker_api_sdk.create_expense(request_body=request_body)\n\nprint(result)\n"
+    },
+    "/expenses/{expense_id}": {
+      "get": "from expense_tracker_api_sdk import ExpenseTrackerApiSdk, Environment\n\nsdk = ExpenseTrackerApiSdk(\n    access_token=\"YOUR_ACCESS_TOKEN\",\n    base_url=Environment.DEFAULT.value,\n    timeout=10\n)\n\nresult = sdk.expense_tracker_api_sdk.get_expense(expense_id=\"exp_01\")\n\nprint(result)\n",
+      "put": "from expense_tracker_api_sdk import ExpenseTrackerApiSdk, Environment\nfrom expense_tracker_api_sdk.models import UpdateExpenseRequest\n\nsdk = ExpenseTrackerApiSdk(\n    access_token=\"YOUR_ACCESS_TOKEN\",\n    base_url=Environment.DEFAULT.value,\n    timeout=10\n)\n\nrequest_body = UpdateExpenseRequest(\n    amount=55,\n    currency=\"USD\",\n    date_=\"2026-09-28\",\n    description=\"Taxi to client site (updated fare)\",\n    category_id=\"cat_01\"\n)\n\nresult = sdk.expense_tracker_api_sdk.update_expense(\n    request_body=request_body,\n    expense_id=\"exp_01\"\n)\n\nprint(result)\n",
+      "delete": "from expense_tracker_api_sdk import ExpenseTrackerApiSdk, Environment\n\nsdk = ExpenseTrackerApiSdk(\n    access_token=\"YOUR_ACCESS_TOKEN\",\n    base_url=Environment.DEFAULT.value,\n    timeout=10\n)\n\nresult = sdk.expense_tracker_api_sdk.delete_expense(expense_id=\"exp_01\")\n\nwith open(\"output-file.ext\", \"w\") as f:\n    f.write(result if isinstance(result, str) else result.decode(errors=\"replace\") if isinstance(result, (bytes, bytearray)) else str(result))\n"
+    },
+    "/claims": {
+      "get": "from expense_tracker_api_sdk import ExpenseTrackerApiSdk, Environment\n\nsdk = ExpenseTrackerApiSdk(\n    access_token=\"YOUR_ACCESS_TOKEN\",\n    base_url=Environment.DEFAULT.value,\n    timeout=10\n)\n\nresult = sdk.expense_tracker_api_sdk.list_claims(status=\"draft\")\n\nprint(result)\n",
+      "post": "from expense_tracker_api_sdk import ExpenseTrackerApiSdk, Environment\nfrom expense_tracker_api_sdk.models import CreateClaimRequest\n\nsdk = ExpenseTrackerApiSdk(\n    access_token=\"YOUR_ACCESS_TOKEN\",\n    base_url=Environment.DEFAULT.value,\n    timeout=10\n)\n\nrequest_body = CreateClaimRequest(\n    title=\"September Business Trip\",\n    expense_ids=[\n        \"exp_01\"\n    ]\n)\n\nresult = sdk.expense_tracker_api_sdk.create_claim(request_body=request_body)\n\nprint(result)\n"
+    },
+    "/claims/{claim_id}": {
+      "get": "from expense_tracker_api_sdk import ExpenseTrackerApiSdk, Environment\n\nsdk = ExpenseTrackerApiSdk(\n    access_token=\"YOUR_ACCESS_TOKEN\",\n    base_url=Environment.DEFAULT.value,\n    timeout=10\n)\n\nresult = sdk.expense_tracker_api_sdk.get_claim(claim_id=\"clm_01\")\n\nprint(result)\n"
+    },
+    "/claims/{claim_id}/submit": {
+      "post": "from expense_tracker_api_sdk import ExpenseTrackerApiSdk, Environment\n\nsdk = ExpenseTrackerApiSdk(\n    access_token=\"YOUR_ACCESS_TOKEN\",\n    base_url=Environment.DEFAULT.value,\n    timeout=10\n)\n\nresult = sdk.expense_tracker_api_sdk.submit_claim(claim_id=\"clm_01\")\n\nprint(result)\n"
+    },
+    "/claims/{claim_id}/approve": {
+      "post": "from expense_tracker_api_sdk import ExpenseTrackerApiSdk, Environment\n\nsdk = ExpenseTrackerApiSdk(\n    access_token=\"YOUR_ACCESS_TOKEN\",\n    base_url=Environment.DEFAULT.value,\n    timeout=10\n)\n\nresult = sdk.expense_tracker_api_sdk.approve_claim(claim_id=\"clm_01\")\n\nprint(result)\n"
+    },
+    "/claims/{claim_id}/reject": {
+      "post": "from expense_tracker_api_sdk import ExpenseTrackerApiSdk, Environment\nfrom expense_tracker_api_sdk.models import RejectClaimRequest\n\nsdk = ExpenseTrackerApiSdk(\n    access_token=\"YOUR_ACCESS_TOKEN\",\n    base_url=Environment.DEFAULT.value,\n    timeout=10\n)\n\nrequest_body = RejectClaimRequest(\n    reason=\"Missing receipts for expenses above threshold\"\n)\n\nresult = sdk.expense_tracker_api_sdk.reject_claim(\n    request_body=request_body,\n    claim_id=\"clm_01\"\n)\n\nprint(result)\n"
+    },
+    "/claims/{claim_id}/reimburse": {
+      "post": "from expense_tracker_api_sdk import ExpenseTrackerApiSdk, Environment\n\nsdk = ExpenseTrackerApiSdk(\n    access_token=\"YOUR_ACCESS_TOKEN\",\n    base_url=Environment.DEFAULT.value,\n    timeout=10\n)\n\nresult = sdk.expense_tracker_api_sdk.reimburse_claim(claim_id=\"clm_01\")\n\nprint(result)\n"
+    }
+  },
+  "methodResponses": {
+    "/categories": {
+      "get": "print(result)",
+      "post": "print(result)"
+    },
+    "/categories/{category_id}": {
+      "get": "print(result)",
+      "put": "print(result)"
+    },
+    "/expenses": {
+      "get": "print(result)",
+      "post": "print(result)"
+    },
+    "/expenses/{expense_id}": {
+      "get": "print(result)",
+      "put": "print(result)",
+      "delete": "with open(\"output-file.ext\", \"w\") as f:\n    f.write(result if isinstance(result, str) else result.decode(errors=\"replace\") if isinstance(result, (bytes, bytearray)) else str(result))"
+    },
+    "/claims": {
+      "get": "print(result)",
+      "post": "print(result)"
+    },
+    "/claims/{claim_id}": {
+      "get": "print(result)"
+    },
+    "/claims/{claim_id}/submit": {
+      "post": "print(result)"
+    },
+    "/claims/{claim_id}/approve": {
+      "post": "print(result)"
+    },
+    "/claims/{claim_id}/reject": {
+      "post": "print(result)"
+    },
+    "/claims/{claim_id}/reimburse": {
+      "post": "print(result)"
+    }
+  },
+  "example": "from expense_tracker_api_sdk import ExpenseTrackerApiSdk, Environment\n\nsdk = ExpenseTrackerApiSdk(\n    access_token=\"YOUR_ACCESS_TOKEN\",\n    base_url=Environment.DEFAULT.value,\n    timeout=10\n)\n\nresult = sdk.expense_tracker_api_sdk.list_categories()\n\nprint(result)\n",
+  "authentication": {
+    "bearer": {
+      "constructor": "ExpenseTrackerApiSdk(\n    access_token=\"YOUR_ACCESS_TOKEN\",\n    timeout=10\n)",
+      "setter": "sdk.set_access_token(\"YOUR_ACCESS_TOKEN\")"
+    }
+  }
+}

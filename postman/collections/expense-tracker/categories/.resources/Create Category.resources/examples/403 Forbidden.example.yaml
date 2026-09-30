@@ -1,0 +1,26 @@
+$kind: http-example
+name: 403 Forbidden
+request:
+  url: '{{base_url}}/categories'
+  method: POST
+  body:
+    type: json
+    content: |-
+      {
+        "name": "Travel",
+        "receipt_threshold": 50.00,
+        "currency": "USD"
+      }
+response:
+  statusCode: 403
+  statusText: Forbidden
+  headers:
+    - key: Content-Type
+      value: application/json
+  body:
+    type: json
+    content: |-
+      {
+        "error": "forbidden",
+        "message": "Only Finance role can manage categories"
+      }

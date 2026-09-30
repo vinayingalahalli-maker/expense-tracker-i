@@ -1,0 +1,19 @@
+$kind: http-request
+name: Create Expense
+method: POST
+url: '{{base_url}}/expenses'
+order: 2000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "amount": 42.50,
+      "currency": "USD",
+      "date": "2026-09-28",
+      "description": "Taxi to client site",
+      "category_id": "cat_01"
+    }
+examples: './.resources/Create Expense.resources/examples/'

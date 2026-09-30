@@ -1,0 +1,28 @@
+$kind: http-example
+name: '422 Receipt Required'
+request:
+  url: '{{base_url}}/expenses'
+  method: POST
+  body:
+    type: json
+    content: |-
+      {
+        "amount": 120.00,
+        "currency": "USD",
+        "date": "2026-09-28",
+        "description": "Flight to NYC",
+        "category_id": "cat_01"
+      }
+response:
+  statusCode: 422
+  statusText: Unprocessable Entity
+  headers:
+    - key: Content-Type
+      value: application/json
+  body:
+    type: json
+    content: |-
+      {
+        "error": "receipt_required",
+        "message": "A receipt is mandatory for amounts above the category threshold of 50.00 USD"
+      }

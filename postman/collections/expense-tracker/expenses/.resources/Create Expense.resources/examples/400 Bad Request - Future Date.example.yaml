@@ -1,0 +1,28 @@
+$kind: http-example
+name: '400 Bad Request - Future Date'
+request:
+  url: '{{base_url}}/expenses'
+  method: POST
+  body:
+    type: json
+    content: |-
+      {
+        "amount": 42.50,
+        "currency": "USD",
+        "date": "2027-01-01",
+        "description": "Taxi to client site",
+        "category_id": "cat_01"
+      }
+response:
+  statusCode: 400
+  statusText: Bad Request
+  headers:
+    - key: Content-Type
+      value: application/json
+  body:
+    type: json
+    content: |-
+      {
+        "error": "validation_error",
+        "message": "date cannot be in the future"
+      }
